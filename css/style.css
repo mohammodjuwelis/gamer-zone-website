@@ -13,7 +13,11 @@
 
 /* shares style in here  */
 
-
+.section-header-title{
+    font-size: 3rem;
+    font-weight: 700;
+    background-color: #F948B2 ;
+}
 
 
 
@@ -85,7 +89,79 @@ nav ul .sidebar a{
 
 }
 
+/* main area in start  */
+.banner-container{
+    padding:0 240px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 4rem;
+    background-image: url(../images/Group\ 14.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+}
+
+.banner-content{
+    padding: 148px 0;
+}
+
+.banner-content .banner-title{
+    color: #0B0223;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.banner-content .banner-large-title{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-size: 6rem;
+}
+
+.banner-list-item a{
+    display: block;
+    color: #534C64;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.banner-list-item a img{
+    margin-right: 12px;
+}
+
+.btn-box{
+    margin-top: 2rem;
+}
+
+.btn-box .primary-btn{
+    background-color: #F948B2;
+    padding: 20px 40px;
+    text-align: center;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 3rem;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.btn-box  button:last-child{
+    background-color: #4EC5F7;
+}
+
+.banner-thumb img {
+    width: 100%;
+}
+
+
+/* mobile device responsive in here  */
 @media screen and (max-width:576px) {  
     .header-area {
         padding: 30px 15px;
@@ -102,7 +178,7 @@ nav ul .sidebar a{
     }
     
 }
-
+/* tablet device responsive in here  */
 @media screen and (min-width:576px) and (max-width:778px) {
     .header-area {
         padding: 37px 30px;
@@ -120,7 +196,7 @@ nav ul .sidebar a{
     
 }
 
-
+/* laptop device responsive in here code  */
 @media screen and (min-width:778px) and (max-width:992px) {
     .header-area {
         padding: 37px 20px;
@@ -135,12 +211,14 @@ nav ul .sidebar a{
     }
 }
 
+/* large laptop device responsive in here code  */
 @media screen and (min-width:992px) and (max-width:1200px) {
     .header-area {
         padding: 37px 40px;
     }
 
 }
+/* large computer device responsive in here code  */
 @media screen and (min-width:1200px) and (max-width:1400px) {
     .header-area {
         padding: 37px 100px;
