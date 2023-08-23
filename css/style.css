@@ -4,6 +4,7 @@
     box-sizing: border-box;
     outline: none;
     font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
 }
 
 /* google fonts  */
@@ -11,3 +12,110 @@
 
 
 /* shares style in here  */
+
+
+
+
+
+/* header area styles */
+.header-area{
+    padding: 37px 240px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+nav .logo{
+    display: flex;
+    align-items: center;
+    column-gap: 1.3rem;
+}
+
+
+nav .logo img{
+    width: inherit;
+}
+
+nav .logo h3{
+    font-weight: 700;
+    color: #0B0223;
+    font-size: 2.8rem;
+}
+nav .logo h3 > span{
+    color: #FF42A5;
+}
+
+
+
+nav  ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 2rem;
+}
+
+nav ul li a{
+    color: #3C354F;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+nav ul .sidebar{
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 1.1rem 1.5rem;
+}
+
+nav ul .sidebar a{
+    color: #3C354F;
+    font-weight: 500;
+    margin-right: 1.5rem;
+    font-size: 1.1rem;
+
+}
+
+
+@media screen and (max-width:576px) {  
+    .header-area {
+        padding: 30px 15px;
+    }
+    nav .logo {
+        margin-bottom: 1rem;
+    } 
+    nav, nav  ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 1.5rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
