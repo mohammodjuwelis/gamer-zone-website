@@ -5,6 +5,7 @@
     outline: none;
     font-family: 'Work Sans', sans-serif;
     text-decoration: none;
+    list-style: none;
 }
 
 /* google fonts  */
@@ -91,73 +92,55 @@ nav ul .sidebar a{
 
 /* main area in start  */
 .banner-container{
-    padding:0 240px;
     display: flex;
     justify-content: space-between;
-    column-gap: 4rem;
-    background-image: url(../images/Group\ 14.png);
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-size: cover;
-
 }
 
 .banner-content{
-    padding: 148px 0;
+    padding: 148px 100px;
+    fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
 }
 
 .banner-content .banner-title{
+
     color: #0B0223;
     font-weight: 600;
     font-size: 3rem;
 }
-
 .banner-content .banner-large-title{
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #F948B2;
     font-weight: 800;
     text-transform: uppercase;
-    margin-bottom: 1.5rem;
     font-size: 6rem;
 }
 
-.banner-list-item a{
-    display: block;
+.banner-list-item li {
     color: #534C64;
     font-weight: 500;
     margin-bottom: 8px;
     font-size: 1.2rem;
 }
 
-.banner-list-item a img{
-    margin-right: 12px;
-}
-
-.btn-box{
-    margin-top: 2rem;
-}
-
 .btn-box .primary-btn{
-    background-color: #F948B2;
     padding: 20px 40px;
-    text-align: center;
+    border: none;
+    border-radius: 48px;
     cursor: pointer;
-    border: transparent;
-    border-radius: 3rem;
     color: #fff;
+    background-color: #F948B2;
     font-weight: 600;
     text-transform: uppercase;
+    margin-top: 2.5rem;
+    margin-right: 1.5rem;
     font-size: 1.2rem;
 }
 
-.btn-box  button:last-child{
+.btn-box button:last-child{
     background-color: #4EC5F7;
 }
 
-.banner-thumb img {
-    width: 100%;
+.banner-img-container{
+    padding-right: 80px;
 }
 
 
@@ -176,20 +159,67 @@ nav ul .sidebar a{
     nav ul li {
         margin-bottom: 1.5rem;
     }
+
+    .banner-container {
+        padding: 0 15px;
+        flex-direction: column-reverse;
+    }
+
+
+    .banner-content .banner-large-title {
+        font-size: 5rem;
+    }
+    .banner-content {
+        padding: 80px 15px;
+    }
+
+    .btn-box .primary-btn {
+        padding: 20px 33px;
+        font-size: 1.1rem;
+    }
+
+    .banner-img-container {
+        padding-right: 0px;
+    }
+
+    .banner-img-container img{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
     
 }
+
+
 /* tablet device responsive in here  */
 @media screen and (min-width:576px) and (max-width:778px) {
     .header-area {
         padding: 37px 30px;
     }
 
-    nav, nav  ul {
+    nav, nav  ul, .banner-container {
         flex-direction: column;
     }
 
     nav .logo , nav ul li {
         margin-bottom: 1.5rem;
+    }
+
+    .banner-container {
+        padding: 0 30px;
+        flex-direction: column-reverse;
+    }
+
+    .banner-content {
+        padding: 100px 50px;
+    }
+
+    .banner-img-container {
+        padding-right: 0px;
+    }
+
+    .banner-img-container img{
+        width: 100%;
+        margin-bottom: 1rem;
     }
 
 
@@ -209,6 +239,26 @@ nav ul .sidebar a{
     nav ul li {
         margin-right: 1.1rem;
     }
+
+    .banner-container {
+        padding: 0px 20px;
+        flex-direction: column-reverse;
+    }
+
+    .banner-content {
+        padding: 100px;
+    }
+
+    .banner-img-container {
+        padding-right: 0px;
+    }
+
+    .banner-img-container img{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+
 }
 
 /* large laptop device responsive in here code  */
@@ -217,12 +267,40 @@ nav ul .sidebar a{
         padding: 37px 40px;
     }
 
+    .banner-container {
+        padding: 0 10px;
+    }
+
+    .banner-content {
+        padding: 50px 25px;
+    }
+
+    .banner-img-container {
+        padding-right: 25px;
+    }
+
+    .banner-img-container img{
+        width: 100%;
+        /* margin-bottom: 1rem; */
+    }
+
 }
+
+
 /* large computer device responsive in here code  */
 @media screen and (min-width:1200px) and (max-width:1400px) {
     .header-area {
-        padding: 37px 100px;
+        padding: 37px 30px;
     }
+
+    .banner-content {
+        padding: 100px 25px;
+    }
+
+    .banner-img-container {
+        padding-right: 5px;
+    }
+
 
 }
 
