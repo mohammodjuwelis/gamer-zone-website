@@ -329,7 +329,7 @@ nav ul .sidebar a{
 /* play game section styles */
 
 .play-game-container {
-	padding: 50px 100px 70px 100px;
+	padding: 50px 100px 140px 100px;
 	column-gap: 121px;
 }
 .play-game-img{
@@ -343,13 +343,68 @@ nav ul .sidebar a{
 }
 
 
+/* career section styles */
+.career-container{
+    display: flex;
+    justify-content: space-between;
+    background: #FF42A5;
+    padding: 120px 0px 120px 100px;
+    position: relative;
+}
 
+.career-container::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url(../images/Group\ 65.png);
+}
+.career-content{
+    max-width: 600px;
+    width: 100%;
+}
+.career-title {
+    color: #FFF;
+    font-weight: 700;
+    line-height: 3.8rem;
+	margin-bottom: 1.5rem;
+    font-size: 3rem;
+}
 
+.career-description{
+    color: #FFF;
+    margin-bottom: 2rem;
 
+}
 
+.career-content-list {
+	display: flex;
+	justify-content: space-between;
+}
 
+.career-content-list .career-list li{
+    color: #FFF;
+    font-weight: 600;
+    line-height: 40px;
+    font-size: 1.2rem;
+}
 
+.career-btn{
+    color: #F948B2;
+    background: #FFF;
+}
 
+.career-img {
+    display: none;
+    visibility: hidden;
+}
+
+.career-img img{
+    width: 100%;
+    display: block;
+}
 
 
 
@@ -442,7 +497,7 @@ nav ul .sidebar a{
         flex-direction: column;
     }
 
-    .play-content {
+    .play-content, .career-content {
         margin-bottom: 2rem;
     }
 
@@ -477,6 +532,20 @@ nav ul .sidebar a{
         width: 100%;
     }
 
+    .career-container{
+        flex-direction: column;
+        padding: 80px 25px;
+    }
+    .career-content-list .career-list li {
+        font-size: 1rem;
+    }
+    
+    .career-container::before {
+        display: none;
+        visibility: hidden;
+    }
+    
+
 
     
 }
@@ -488,7 +557,7 @@ nav ul .sidebar a{
         padding: 37px 30px;
     }
 
-    nav, nav  ul, .banner-container {
+    nav, nav  ul, .banner-container, .career-container {
         flex-direction: column;
     }
 
@@ -575,7 +644,7 @@ nav ul .sidebar a{
 
     .play-game-container {
         flex-direction: column-reverse;
-        padding: 0 100px 120px 2px;
+        padding: 0 100px 120px 42px;
     }
 
     .play-game-nested-img {
@@ -586,6 +655,23 @@ nav ul .sidebar a{
     .play-game-nested-img img {
         max-width: 180px;
         width: 100%;
+    }
+
+    .career-container {
+        padding: 50px;
+    }
+
+    .career-content{
+        margin-bottom: 2rem;
+    }
+
+    .career-content-list .career-list li {
+        font-size: 1.1rem;
+    }
+
+    .career-container::before {
+        display: none;
+        visibility: hidden;
     }
 
 
@@ -682,6 +768,20 @@ nav ul .sidebar a{
         right: -52px;
     }
 
+    .career-container {
+        flex-direction: column;
+        padding: 120px 70px 120px 80px;
+    }
+
+    .career-content{
+        margin-bottom: 2rem;
+    }
+
+    .career-container::before {
+        display: none;
+        visibility: hidden;
+    }
+
 
 }
 
@@ -764,6 +864,19 @@ nav ul .sidebar a{
     .play-game-nested-img img {
         max-width: 180px;
         width: 100%;
+    }
+
+    .career-container {
+        flex-direction: column;
+        padding: 75px 65px;
+    }
+    .career-content{
+        margin-bottom: 2rem;
+    }
+
+    .career-container::before {
+        display: none;
+        visibility: hidden;
     }
 
     
