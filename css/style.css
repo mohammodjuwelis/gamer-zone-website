@@ -326,6 +326,21 @@ nav ul .sidebar a{
 }
 
 
+/* play game section styles */
+
+.play-game-container {
+	padding: 50px 100px 70px 100px;
+	column-gap: 121px;
+}
+.play-game-img{
+    position: relative;
+}
+
+.play-game-nested-img {
+	position: absolute;
+	bottom: -108px;
+	right: -111px;
+}
 
 
 
@@ -449,6 +464,19 @@ nav ul .sidebar a{
         width: 100%;
     }
 
+    .play-game-container {
+        flex-direction: column-reverse;
+    }
+
+    .play-game-nested-img {
+        bottom: -25px;
+        right: 0px;
+    }
+    .play-game-nested-img img {
+        max-width: 180px;
+        width: 100%;
+    }
+
 
     
 }
@@ -545,6 +573,21 @@ nav ul .sidebar a{
         left: -98px;
     }
 
+    .play-game-container {
+        flex-direction: column-reverse;
+        padding: 0 100px 120px 2px;
+    }
+
+    .play-game-nested-img {
+        bottom: -57px;
+        right: -99px;
+    }
+
+    .play-game-nested-img img {
+        max-width: 180px;
+        width: 100%;
+    }
+
 
     
 }
@@ -629,6 +672,17 @@ nav ul .sidebar a{
     }
 
 
+    .play-game-container {
+        flex-direction: column-reverse;
+        padding: 0 100px 120px 33px;
+    }
+
+    .play-game-nested-img {
+        bottom: -108px;
+        right: -52px;
+    }
+
+
 }
 
 /* large laptop device responsive in here code  */
@@ -697,6 +751,23 @@ nav ul .sidebar a{
 
     
 
+    .play-game-content {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .play-game-nested-img {
+        bottom: -28px;
+        right: -52px;
+    }
+
+    .play-game-nested-img img {
+        max-width: 180px;
+        width: 100%;
+    }
+
+    
+
 
 
 }
@@ -729,6 +800,9 @@ nav ul .sidebar a{
         column-gap: 74px;
         padding: 0 100px 120px 100px;
     }
+    .play-content h3 {
+        font-size: 2.7rem;
+    }
 
     .play-nested-img {
         position: absolute;
@@ -741,6 +815,30 @@ nav ul .sidebar a{
         width: 100%;
     }
 
+    .play-game-container {
+        padding: 50px 100px 70px 100px;
+        column-gap: 135px;
+    }
+
+    .play-game-img img {
+        /* max-width: 635px; */
+        width: 100%;
+    }
+
+    .play-game-nested-img {
+        bottom: -58px;
+        right: -111px;
+    }
+
+    .play-game-nested-img img {
+        max-width: 225px;
+        width: 100%;
+    }
+
+    .play-game-content {
+        max-width: 400px;
+        width: 100%;
+    }
 
 }
 
